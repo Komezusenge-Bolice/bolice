@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KOMEZUSENGE Bolice | Portfolio</title>
+  <style>
+    :root {
+      --accent: #1abc9c;
+      --bg: #181A1B;
+      --fg: #f2f2f2;
+      --card: #212324;
+      --section: #282b2c;
+      --link: #4fd1c5;
+      font-family: 'Segoe UI',Arial,sans-serif;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: inherit;
+    }
+    header {
+      background: var(--card);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+    nav {
+      margin: 1.5rem 0 0;
+    }
+    nav a {
+      color: var(--link);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background: var(--section);
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      box-shadow: 0 0 7px #0003;
+    }
+    section h2 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 1.6rem;
+      border-bottom: 1px solid #2225;
+      padding-bottom: 0.3rem;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.1rem;
+      margin-top: 1rem;
+    }
+    .skills-list span {
+      background: #223034;
+      color: var(--fg);
+      padding: 0.35em 1.1em;
+      border-radius: 18px;
+      font-size: 1rem;
+      font-weight: 500;
+      box-shadow: 0 1px 2px #0005;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .project {
+      background: var(--card);
+      border-radius: 7px;
+      padding: 1rem;
+      border: 1.5px solid #24595f22;
+      box-shadow: 0 1px 5px #0002;
+      display: flex;
+      flex-direction: column;
+    }
+    .project-title {
+      color: var(--link);
+      margin: 0;
+      font-size: 1.18rem;
+    }
+    .project-desc {
+      margin: .5em 0 0.7em 0;
+      flex: 1 1 auto;
+    }
+    .project-tags {
+      margin-top: auto;
+      font-size: .93em;
+      color: #bbc;
+    }
+    .meta-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    .meta-list li {
+      margin-bottom: .6em;
+    }
+    .contact a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 500;
+      margin-right: 1.5em;
+      transition: color 0.2s;
+    }
+    .contact a:hover {
+      color: var(--accent);
+    }
+    @media (max-width:600px) {
+      .projects { grid-template-columns: 1fr; }
+      main { padding: 0; }
+      section { padding: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KOMEZUSENGE Bolice</h1>
+    <p>Software Developer &amp; Cyber Security Engineer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm <b>KOMEZUSENGE Bolice</b>, a passionate Software Developer and Cyber Security Engineer. I enjoy building secure, scalable, and impactful applications using modern technologies, and have a strong interest in ethical hacking and systems defense. My goal is to bridge software innovation and security best practices to help teams build and defend reliable systems.
+      </p>
+    </section>
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span>Python</span>
+        <span>Ruby</span>
+        <span>JavaScript</span>
+        <span>Node.js</span>
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>MongoDB</span>
+        <span>MySQL</span>
+        <span>Penetration Testing</span>
+        <span>Ethical Hacking</span>
+        <span>Linux</span>
+        <span>Network Security</span>
+        <span>OWASP</span>
+        <span>API Development</span>
+        <span>DevSecOps</span>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <div class="project-title">VulnScanner</div>
+          <div class="project-desc">A Python-based tool for scanning web applications for OWASP Top 10 vulnerabilities. Includes a web dashboard for real-time reporting and integrates with CI/CD pipelines.</div>
+          <div class="project-tags">Python • Flask • Security • CI/CD</div>
+        </div>
+        <div class="project">
+          <div class="project-title">SecureChat</div>
+          <div class="project-desc">A real-time chat application built with Node.js and MongoDB, featuring end-to-end encryption and robust authentication.</div>
+          <div class="project-tags">Node.js • MongoDB • Socket.io • Encryption</div>
+        </div>
+        <div class="project">
+          <div class="project-title">PenTest-Toolkit</div>
+          <div class="project-desc">Collection of Ruby scripts and tools used during penetration tests, automating information gathering and exploitation tasks.</div>
+          <div class="project-tags">Ruby • Security Automation</div>
+        </div>
+        <!-- Add your real projects or edit these -->
+      </div>
+    </section>
+    <!-- Certifications -->
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul class="meta-list">
+        <li>Certified Ethical Hacker (CEH) — <i>EC-Council</i></li>
+        <li>CompTIA Security+ — <i>CompTIA</i></li>
+        <li>Python Developer Certificate — <i>Codecademy</i></li>
+        <!-- Add or replace with your real certifications -->
+      </ul>
+    </section>
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="meta-list">
+        <li><b>Software Developer</b> – XYZ Tech Ltd<br>
+          <i>2023–Present</i>: Built scalable web solutions and contributed to internal security automation.
+        </li>
+        <li><b>Cyber Security Intern</b> – SecureNet Labs<br>
+          <i>2022</i>: Assisted penetration tests and performed vulnerability assessments.
+        </li>
+        <!-- Fill in with your career experiences -->
+      </ul>
+    </section>
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="meta-list">
+        <li><b>B.Sc. in Computer Science (Cyber Security)</b> – University of Technology, 2020–2023</li>
+        <!-- Replace/edit as needed -->
+      </ul>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        <a href="mailto:komezusengebolice@gmail.com">Email</a>
+        <a href="https://github.com/komezusenge-bolice" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/komezusenge-bolice-0b8280380/" target="_blank">LinkedIn</a>
+        <!-- Update with your real email/socials -->
+      </div>
+    </section>
+  </main>
+</body>
+</html>
